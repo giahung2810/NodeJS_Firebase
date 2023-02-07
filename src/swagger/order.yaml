@@ -1,0 +1,127 @@
+# Online Swagger yaml file formatter: https://editor.swagger.io/
+
+/order/get-all-order:
+    get:
+        summary: Get All Order
+        tags:
+            - Order
+        responses: 
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+
+
+/order/get-order/{orderID}:
+    get:
+        summary: Get Order by ID order
+        tags:
+            - Order
+        parameters:
+            - in: path
+              name: orderID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/order/get-order-userid/{userID}:
+    get:
+        summary: Get Order by ID user
+        tags:
+            - Order
+        parameters:
+            - in: path
+              name: userID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/order/get-order-delivery-pending:
+    get:
+        summary: Get Order have status is delivery || pending
+        tags:
+            - Order
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/order/add-order: 
+    post:
+        summary: Add new Order
+        tags:
+            - Order
+        requestBody:
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        required:
+                            - userid
+                            - productsid
+                            - status
+                            - address
+                        properties:
+                            userid:
+                                type: string
+                            productsid: 
+                                type: array
+                                items:
+                                  type: object
+                                minItems: 1
+                            status:
+                                type: string
+                            address:
+                                type: string
+                        example:                          
+                            userid: "TDCr8OBS2zUVcc5ZEXN7"
+                            productsid: [
+                                productid: "ajxqOSLqv9Ti4cql0WIj",
+                                productid: "ajxqOSLqv9Ti4cql0WIj",
+                                productid: "ajxqOSLqv9Ti4cql0WIj",
+                            ]
+                            status: pending
+                            address: Hoa An, Cam Le
+
+        responses:
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+/order/delete-order/{orderID}:
+    delete:
+        summary: Delete Order by ID Order
+        tags:
+            - Order
+        parameters:
+            - in: path
+              name: orderID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+
+
+
+
+
+
+

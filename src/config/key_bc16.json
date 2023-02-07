@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bc16-shoesstore",
+  "private_key_id": "9d92d1cb06a30bea10cd4db875a2f8fcd8d68d03",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDjCU1p+B/7zuGo\n1jW3aQbtSbUMtnauholFvX6YSdOJoA0PYTKCoNR8coi+NrLaufEpDYO2atc3VLjS\nJSdi3X2RKR5qSW4wVCzoHNUzpNk4H9jS/kZZ1/QkxQJyNsu8vJsVqz35fqeQ8kKQ\n7IzJ+7sutRNE9QiOpneeWP9iYvP1GCfRzskLDeh14/E30rLnJkVVBm+npFTLi9t1\nitEr2ZAQlEeIXpoUtzn8AAXydpSCsU+Yap9m+hiIWuhWKuiAmoqE2pq5tNbGmNQy\nbpCktNWmC6GeDhS9usOMtyPj1iXvtoNLf7xJ5gQ2FLXRI/gMGVR8Ss4c735o/6K4\nEvRRui1NAgMBAAECggEANsvtOxUn1Q0pAmjXNLIc+aMXV17ntLZkhehXWHbDH325\ngTuGpygduP6k2fIWR3vnBK9OGbZeROzGIfRVNgO69ZD81g7skS4T257v52PTiLwJ\nB13XSYJ5mvFQ5pOqp15HORroXaIv2+hY4CUz0uFW245ZPQS+IL31c4rL8ulqs74B\nGXPJUBSN62Mp75h0GAIy83JCwF3nr1advRDuRLZ6elTMAqDj/kmZ9JlTzO8gVB9l\nq4aCYobcq9I0mGMdaI1iZwhqgEnl8r536YfQ3KkEZRuI5vcj5aTutjI913lDCkeN\nNTLaVqDKTiyoavIkzC5Jfhvkq8HyiXB+Ud+UmDZFwQKBgQD4yOJL7kyoZdVDtMPz\n6C0lpVU9J5hPnQIg9lskM2bPiiwKhMIu+BxO/DDHZzSfXRWx0oCMpLKP2sdTMDJk\nA27/5jjyROySbVSEl4ecGgRuAKAyUB6csg9zKRyxTdpNtBSGrqAALWdEE6drt+Tx\ngvu+SU5N+NeBjSVImyhqCOEewQKBgQDpnvJLa6Gng5eORJVw+dRyV2pOfjUem4XI\nRlw4wrAcp0oRuOCY2IhA4/GQmjzJWA8WPyHZnINnmjOnwDAja6ySavUxaKyKE6B+\nlpj03abqeGh4BhSMrAbIPoaVscAZk5r4l0oU4f2bzBFcYI2ue8MZ69VsRrwA1XnO\n46U6J7h9jQKBgQDQBqmy9EAFT6FUTALOIIYfxG/SAxnI+HCfP2BWlOSTBeZtpTT6\nMVz6bsYa9qF54EwTtQDomY712upxFQwNtRFLySY07o0io2jYthwe22J42O0bJQNz\n4zAoC2iCmabA8qN3Ou1vOIfw1L5ZxBscF3qJUqK3cCxDl9JlM9hHUcVsAQKBgDLs\n8Qg7yBtJ9imPDbx42TSrlYLSxCWN5VXI8KV22wkD9oNyd5MZ8Gmkxq2s0X9acL96\nt5hGI+bbmFMC8/tkp1OreRNyK9pVePDfRyxpfM8zvCIdwTEA9uGDr7bF7ogkwu1Z\nnU58DNp/W3F1oqzcUaU+4WEe8jCEWG8e9I9+xRqpAoGBANobJuKAsG75uwLtrm5y\nQkaQJVgeETL82R1z6NFIQZ+mPMTUn9xcNrEmc00vToQnWqitZhK1SWM454RmWbIw\nlk1Nt1+Fo+vrtd62uCzP3g1iQ4Z33J8AhcOXss5k0ACRGODVbwWgV/MA59bus9ek\nLG3/hMrQNmC3xylGX0Rt9NA1\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-75ld1@bc16-shoesstore.iam.gserviceaccount.com",
+  "client_id": "101987507198542151115",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-75ld1%40bc16-shoesstore.iam.gserviceaccount.com"
+}

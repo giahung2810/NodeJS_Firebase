@@ -1,0 +1,235 @@
+# Online Swagger yaml file formatter: https://editor.swagger.io/
+
+/shoes/get-all-shoes:
+    get:
+        summary: Get All Shoes
+        tags:
+            - Shoes
+        responses: 
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+/shoes/get-all-shoes-limit:
+    get:
+        summary: Get 5 Shoes use at Home Page 
+        tags:
+            - Shoes
+        responses: 
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+/shoes/get-shoes/{productID}:
+    get:
+        summary: Get Shoes by ID product
+        tags:
+            - Shoes
+        parameters:
+            - in: path
+              name: productID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/get-shoes-categoryID/{categoryID}:
+    get:
+        summary: Get Shoes by ID category
+        tags:
+            - Shoes
+        parameters:
+            - in: path
+              name: categoryID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/get-shoes-popular:
+    get:
+        summary: Get Shoes Popular
+        tags:
+            - Shoes
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/get-shoes-popular-limit:
+    get:
+        summary: Get Shoes Popular limit use for Home Page
+        tags:
+            - Shoes
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/get-shoes-new:
+    get:
+        summary: Get Shoes New
+        tags:
+            - Shoes
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/add-shoes: 
+    post:
+        summary: Add new product
+        tags:
+            - Shoes
+        requestBody:
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        required:
+                            - name
+                            - info
+                            - datecreate
+                            - prices
+                            - categoryid
+                            - images
+                            - amount
+                        properties:
+                            name:
+                                type: string
+                            info:
+                                type: string
+                            datecreate:
+                                type: string
+                            prices:
+                                type: number
+                            categoryid: 
+                                type: string
+                            images: 
+                                type: array
+                                items:
+                                  type: object
+                                minItems: 1
+                                maxItems: 10
+                            amount:
+                                type: number
+                        example:                          
+                            name: "Leather Women 2 Boots"
+                            info: "Boot for women 2"
+                            datecreate: "2023-02-01T04:25:34.828Z"
+                            prices: 200
+                            categoryid: "IVViuGS1iRXPgLtaHamB"
+                            images: [
+                                image: "productimgs/abd1.jpeg",
+                                image: "productimgs/abd2.jpeg",
+                                image: "productimgs/abd3.jpeg",
+                                image: "productimgs/abd4.jpeg",
+                                image: "productimgs/abd5.jpeg",
+                            ]
+                            amount: 101
+
+        responses:
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+/shoes/delete-shoes/{productID}:
+    delete:
+        summary: Delete Shoes by ID product
+        tags:
+            - Shoes
+        parameters:
+            - in: path
+              name: productID
+              required: true
+              schema:
+                  type: string
+        responses:
+            200:
+                description: Successfully
+            400: 
+                description: Failed
+
+/shoes/update-shoes/{productID}: 
+    put:
+        summary: Update product
+        tags:
+            - Shoes
+        parameters:
+            - in: path
+              name: productID
+              required: true
+              schema:
+                  type: string
+        requestBody:
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        required:
+                            - name
+                            - info
+                            - datecreate
+                            - prices
+                            - categoryid
+                            - images
+                            - amount
+                        properties:
+                            name:
+                                type: string
+                            info:
+                                type: string
+                            datecreate:
+                                type: string
+                            prices:
+                                type: number
+                            categoryid: 
+                                type: string
+                            images: 
+                                type: array
+                                items:
+                                  type: object
+                                minItems: 1
+                                maxItems: 10
+                            amount:
+                                type: number
+                        example:                          
+                            name: "Leather Women 2 Boots"
+                            info: "Boot for women 2"
+                            datecreate: "2023-02-01T04:25:34.828Z"
+                            prices: 200
+                            categoryid: "IVViuGS1iRXPgLtaHamB"
+                            images: [
+                                image: "productimgs/abd1.jpeg",
+                                image: "productimgs/abd2.jpeg",
+                                image: "productimgs/abd3.jpeg",
+                                image: "productimgs/abd4.jpeg",
+                                image: "productimgs/abd5.jpeg",
+                            ]
+                            amount: 101
+
+        responses:
+            200:
+                description: Successfully
+            400:
+                description: Failed
+
+
+
+
+
+
